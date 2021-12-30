@@ -10,12 +10,12 @@
     <meta type="description" content="The Orphan of Zhao theater play website">
     <title>The Orphan of Zhao theater play website</title>
   </head>
-  <body>
+  <body class='overflow-x-hidden'>
     <header class='header'>
-      <a href='./index.html'><img class='logo-theater' src='./assets/images/logo-theatre.png' alt='logo historian theater'></a>
-      <nav class='nav-bar'>
-        <ul class='nav-bar-list'>
-            <li class='nav-bar-element'><a href='./cast.html'>Cast</a></li>
+      <a href='./index.html'><img class='w-auto h-8' src='./assets/images/logo-theatre.png' alt='logo historian theater'></a>
+      <nav class='font-sans '>
+        <ul class='flex justify-around w-full mb-0 list-none md:hidden'>
+            <li class='pl-10'><a href='./cast.html'>Cast</a></li>
         </ul>
 
         <i class="burger">
@@ -27,12 +27,12 @@
       </nav>
     </header>
 
-    <main class='cast-main'>
+    <main class='overflow-y-hidden md:h-auto md:overflow-y-scroll'>
 
         <h1>Cast & characters</h1>
 
-        <div class='cast-flex'>
-        <div class='row-flex first-row-flex'>
+        <div class='relative z-30 m-auto mt-6 md:flex md:align-middle md:justify-around md:mb-12 md: sm:flex-col sm:w-4/5'>
+        <div class='cast-row md:flex-col md:my-0'>
             <div class="card">
                 <img class='cast-img' src='./assets/images/Cheng Ying.png' alt='profile picture of Ioan Thomas'>
                 <div class="card-body">
@@ -59,7 +59,7 @@
 
         </div>
 
-        <div class='row-flex second-row-flex'>
+        <div class='cast-row my-0 md:flex-col md:my-0'>
             <div class="card">
                 <img class='cast-img' src='./assets/images/Han Jue.png' alt='profile picture of Channe Carter'>
                 <div class="card-body">
@@ -89,8 +89,8 @@
     
     </div>
 
-    <svg width='200vw' height='632px' class='red-svg-cast' >
-        <rect width="200vw" height="632px" class='red-rect'/>
+    <svg width='200vw' height='632px' class='relative z-5 -mt-50 -ml-200 md:h-50 md:-mb-1.5 sm:h-50 sm:-mb-50' >
+        <rect width="200vw" height="632px" class='fill-current text-red'/>
     </svg>
         
 
@@ -98,16 +98,16 @@
 
     <footer class='footer'>
 
-        <a class='footer-child' href='./index.html'><img class='logo-theater' src='./assets/images/logo-theatre.png' alt='logo historian theater'></a>
+        <a class='footer-child' href='./index.html'><img class='w-auto h-8' src='./assets/images/logo-theatre.png' alt='logo historian theater'></a>
 
-        <div class='nav-bar footer-nav-bar-list footer-links'>
-            <a class='footer-link' href='./cast.html'>Cast</a>
+        <div class='nav-bar footer-nav-bar-list w-300'>
+            <a class='text-black no-underline' href='./cast.html'>Cast</a>
         </div> 
 
-        <div class='footer-nav-bar-list social-icons'>
-            <a href='#' target='blank'><img class='social-icon' src='./assets/images/google.svg' alt='icon google'></a>
-            <a href='#' target='blank'><img class='social-icon' src='./assets/images/facebook.svg' alt='icon facebook'></a>
-            <a href='#' target='blank'><img class='social-icon' src='./assets/images/twitter.svg' alt='icon twitter'></a>
+        <div class='flex justify-around w-125 list-none  md:w-auto'>
+            <a href='#' target='blank'><img class='w-auto h-8' src='./assets/images/google.svg' alt='icon google'></a>
+            <a href='#' target='blank'><img class='w-auto h-8' src='./assets/images/facebook.svg' alt='icon facebook'></a>
+            <a href='#' target='blank'><img class='w-auto h-8' src='./assets/images/twitter.svg' alt='icon twitter'></a>
         </div>
   
       </footer>
